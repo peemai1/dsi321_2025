@@ -10,8 +10,7 @@ import os
 import io
 from datetime import datetime
 import pytz
-from transformers import TapasTokenizer, TapasForQuestionAnswering
-import torch
+
 
 # Define Thailand timezone
 thai_tz = pytz.timezone('Asia/Bangkok')
@@ -596,97 +595,7 @@ def show_data_table(filtered_df):
     st.header("📄 Collected Weather Data")
     st.dataframe(filtered_df)
 
-# == Function to inform user using LLM ==
-# # Check cleaned data
-# def show_cleaned_data(filtered_df):
-#     cleaned_df = clean_weather_df_for_tapas(filtered_df)
 
-#     st.header("🧼 Cleaned Weather Data for TAPAS")
-#     st.dataframe(cleaned_df)
-    
-# Load model and tokenizer once
-def show_llm_assistant(filtered_df):
-    """Use TAPAS to answer a question based on the weather table."""
-    def clean_weather_df_for_tapas(df):
-        columns_to_keep = [
-            "weather_main", "weather_description", "main.temp",
-            "main.humidity", "wind.speed", "precipitation"
-        ]
-        df = df.copy()
-        df = df[columns_to_keep]
-        df = df.dropna()
-
-        df = df.rename(columns={
-            "main.temp": "Temperature",
-            "main.humidity": "Humidity",
-            "wind.speed": "WindSpeed",
-            "weather_main": "Weather",
-            "weather_description": "Description",
-            "precipitation": "Precipitation"
-        })
-
-        for col in df.columns:
-            df[col] = df[col].astype(str)
-
-        df = df.tail(5).reset_index(drop=True)
-        return df
-    
-    tokenizer = TapasTokenizer.from_pretrained("google/tapas-base-finetuned-wtq")
-    model = TapasForQuestionAnswering.from_pretrained("google/tapas-base-finetuned-wtq")
-
-    user_question = (
-        "How does the weather look like this hour? "
-        "Is there anything I should prepare or avoid if I am going to this place?"
-    )
-
-    filtered_df = clean_weather_df_for_tapas(filtered_df)
-    if filtered_df is None or filtered_df.empty:
-        st.warning("No data available to generate a response.")
-        return
-
-    # Only use up to last 5 rows
-    table = filtered_df.tail(5).copy()
-
-    # ✅ Ensure column names are strings
-    table.columns = table.columns.map(str)
-
-    # ✅ Convert all values to string
-    table = table.astype(str)
-
-    # ✅ Print debug info
-    st.write("🛠️ Debug Info: Table shape:", table.shape)
-    st.write("Columns:", table.columns.tolist())
-    st.write(table.head())
-    st.write("Column data types:")
-    st.write(table.dtypes)
-    
-    non_string_mask = table.applymap(lambda x: not isinstance(x, str))
-    if non_string_mask.any().any():
-        st.write("❌ Non-string values found at:")
-        st.write(table[non_string_mask])
-    else:
-        st.write("✅ All values are confirmed strings.")
-
-
-    try:
-        # TAPAS tokenizer
-        inputs = tokenizer(table=table, queries=[user_question], return_tensors="pt")
-
-        with torch.no_grad():
-            outputs = model(**inputs)
-            predicted_answer = model.convert_logits_to_answer(
-                inputs,
-                outputs.logits,
-                outputs.aggregator_logits
-)
-
-        st.subheader("🤖 Assistant says:")
-        st.write(predicted_answer[0]['answer'])
-
-    except Exception as e:
-        st.error(f"⚠️ TAPAS model encountered an error: {e}")
-
-   
 # Main app logic
 if LAKEFS_AVAILABLE:
     # Load data button
@@ -761,10 +670,7 @@ if LAKEFS_AVAILABLE:
             show_temperature_trends(filtered_df)
         elif analysis_type == "Raw Data":
             show_data_table(filtered_df)
-        elif analysis_type == "TAPAS":
-            show_llm_assistant(filtered_df)   
 
-            
             
     else:
         st.info("👈 Please configure your LakeFS connection settings in the sidebar and click 'Load Data'")
