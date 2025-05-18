@@ -16,9 +16,9 @@ COPY . /app
 # Install Python packages including a specific version of lakefs-client
 # Using version 0.91.0 which should be compatible with lakeFS 1.7.0
 # Adding fsspec and s3fs for remote storage access
+RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install lakefs-client
 RUN pip install s3fs
-RUN pip install --no-cache-dir -r requirements.txt
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
