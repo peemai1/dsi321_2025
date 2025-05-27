@@ -134,7 +134,8 @@ CI/CD: GitHub Actions<br>
 1. **Repository Setup:** 
     [https://github.com/peemai1/dsi321_2025](https://github.com/peemai1/dsi321_2025)
 
-2. **Commit Frequency:** <br>
+2. **Commit Frequency:** 
+Commit log
 |   |   |   |   |   |
 |---|---|---|---|---|
 |   |   |   |   |   |
