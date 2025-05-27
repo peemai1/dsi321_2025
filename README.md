@@ -19,7 +19,7 @@ This project is a part of <b>DSI321: BIG DATA INFRASTRUCTURE</b> course, buildin
 
 
 ### Dataset
-Data is stored in Parquet format in the LakeFS repository, partitioned by year, month, day, and hour.
+Data is stored in Parquet format in the LakeFS repository, partitioned by year, month, day, and hour.<br>
 Data Schema :
 | Column Name         | Data Type                     | Description                                           |
 |---------------------|-------------------------------|-------------------------------------------------------|
@@ -41,8 +41,7 @@ Data Schema :
 | month               | category                      | Month component of the timestamp (for partitioning)   |
 | day                 | category                      | Day component of the timestamp (for partitioning)     |
 | hour                | category                      | Hour component of the timestamp (for partitioning)    |
-.
----
+
 Data Storage Structure :
 ```
 weather/
@@ -94,7 +93,7 @@ weather/
 
 ### Streamlit Interface
 ![alt text](<Screenshot 2568-05-27 at 18.33.41.png>)
-Key Features
+**Key Features :**
 - **Weather Overview:** 
     Visualizes key weather metrics over time, including temperature, humidity, wind speed, and precipitation, to give a quick snapshot of current and historical conditions.
 
