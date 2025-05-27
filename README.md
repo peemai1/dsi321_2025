@@ -92,7 +92,7 @@ weather/
 ```
 
 ## Streamlit Interface
-![alt text](<Screenshot 2568-05-27 at 18.33.41.png>)
+![alt text](<Screenshot 2568-05-27 at 18.33.41.png>) <br>
 **Key Features :**
 - **Weather Overview:** <br>
     Visualizes key weather metrics over time, including temperature, humidity, wind speed, and precipitation, to give a quick snapshot of current and historical conditions.
