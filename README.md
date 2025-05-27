@@ -131,12 +131,12 @@ CI/CD: GitHub Actions<br>
 
 ## For Grading
 ### Part 1
-1. **Repository Setup** 
+1. **Repository Setup:** 
     [https://github.com/peemai1/dsi321_2025](https://github.com/peemai1/dsi321_2025)
 
-2. **Commit Frequency** 
-| Commit   | Author   | Date       | Message                    |
-|----------|----------|------------|----------------------------|
+2. **Commit Frequency:** 
+| Commit  | Author  | Date      | Message                       |
+|---------|---------|-----------|-------------------------------|
 | 3f83b82 | Peemai01 | 2025-05-27 | update readme              |
 | daad331 | Peemai01 | 2025-05-27 | Update README.md           |
 | e9687b8 | Peemai01 | 2025-05-27 | Update README.md           |
@@ -168,16 +168,16 @@ CI/CD: GitHub Actions<br>
 | fd60c6e | Peemai01 | 2025-05-03 | Initial commit             |
 
 
-3. **README Quality** 
+3. **README Quality:** 
     Total alphabet characters:     4184
 
-4. **Dataset Quality** 
+4. **Dataset Quality:** 
     [Dataset](#dataset)
 
 ### Part 2
-1. **Data Visualization** 
+1. **Data Visualization:** 
     look at [Streamlit Interface](#streamlit-interface)
-2. **Machine Learning Application**
+2. **Machine Learning Application:**
     look at [Streamlit Interface](#streamlit-interface)
 
 
