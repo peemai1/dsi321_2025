@@ -689,12 +689,6 @@ def show_clustering(filtered_df: pd.DataFrame):
     st.write(f"สภาพอากาศล่าสุดจัดอยู่ในกลุ่ม : **{desc_map[cluster_id]}**")
     st.write(f"**คำแนะนำ :** {advice_map[cluster_id]}")
 
-    # Optional: show historical cluster distribution as bar chart
-    st.write("### การกระจายของกลุ่มสภาพอากาศในช่วงเวลาที่เลือก")
-    cluster_counts = filtered_df['cluster'].value_counts().sort_index()
-    cluster_names = [desc_map.get(i, f"Cluster {i}") for i in cluster_counts.index]
-    st.bar_chart(pd.Series(cluster_counts.values, index=cluster_names))
-
 # Main app logic
 if LAKEFS_AVAILABLE:
     # Load data button

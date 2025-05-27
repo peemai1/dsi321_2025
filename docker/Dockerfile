@@ -18,7 +18,6 @@ COPY . /app
 # Adding fsspec and s3fs for remote storage access
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install lakefs-client
-RUN pip install s3fs
 
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
