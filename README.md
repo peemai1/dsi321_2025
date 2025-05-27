@@ -1,10 +1,10 @@
 # Automate Data Pipelines for Real-Time Weather Analytics
 ![Create at](https://img.shields.io/github/created-at/peemai1/dsi321_2025)
 
-### Project Overview
+## Project Overview
 This project is a part of <b>DSI321: BIG DATA INFRASTRUCTURE</b> course, building a complete system to gather, process, and show real-time weather data from the OpenWeatherMap API. Every 15 minutes, it automatically pulls weather updates for Satitram and 14 nearby spots, so the information is always fresh. Behind the scenes, it uses Prefect 3 to keep the data workflows running smoothly on schedule, and LakeFS helps keep track of data versions and history. Users can explore the weather details on an interactive dashboard built with Streamlit, available in both English and Thai. To make sure everything runs consistently no matter where it’s deployed, the whole setup is packaged in Docker containers. Finally, the weather data is stored efficiently as partitioned Parquet files with optimized formats for convenience in querying and analysis.
 
-### Benefits
+## Benefits
 - **Real-Time Weather Updates:** <br>
     The system checks the weather every 15 minutes, so users always have the latest info. This means users can make quick decisions and stay on top of any sudden changes.
 
@@ -18,7 +18,7 @@ This project is a part of <b>DSI321: BIG DATA INFRASTRUCTURE</b> course, buildin
     By grouping together places with similar weather, the system can give users tailored advice—like what to wear, whether to bring an umbrella, or how to prepare for each conditions.
 
 
-### Dataset
+## Dataset
 Data is stored in Parquet format in the LakeFS repository, partitioned by year, month, day, and hour.<br>
 Data Schema :
 | Column Name         | Data Type                     | Description                                           |
@@ -68,7 +68,7 @@ weather/
 | No columns with data type 'object' | ✅ |
 | No duplicate records | ✅ |
 
-### Project structure
+## Project structure
 ```
 .
 ├── LICENSE
@@ -91,7 +91,7 @@ weather/
     └── app.py
 ```
 
-### Streamlit Interface
+## Streamlit Interface
 ![alt text](<Screenshot 2568-05-27 at 18.33.41.png>)
 **Key Features :**
 - **Weather Overview:** <br>
@@ -106,14 +106,14 @@ weather/
 - **Smart Weather Analysis:** <br>
     Enhances insights by applying K-means clustering to group similar weather conditions and generate basic advice that matches the clustered results.
 
-### Tools
+## Tools
 Containerize application environment: Docker<br>
 Orchestration: Prefect<br>
 Data Versioning: lakeFS<br>
 Visualization: Streamlit<br>
 CI/CD: GitHub Actions<br>
 
-### To Run
+## To Run
 - Install required packages:
     ```
     pip install -r docker/requirements.txt
