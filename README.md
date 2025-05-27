@@ -70,7 +70,7 @@ weather/
 | No duplicate records | ✅ |
 
 ### Project structure
-'''
+```
 .
 ├── LICENSE
 ├── README.md
@@ -90,7 +90,7 @@ weather/
 │   └── flow.py
 └── visualization
     └── app.py
-'''
+```
 
 ### Streamlit Interface
 ![alt text](<Screenshot 2568-05-27 at 18.33.41.png>)
