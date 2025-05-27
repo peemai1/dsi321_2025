@@ -15,13 +15,7 @@
 | wind.speed          | float32                       | Wind speed in meters per second                       |
 | rain.1h             | float32                       | Rainfall volume for the last 1 hour in mm             |
 | rain.3h             | float32                       | Rainfall volume for the last 3 hours in mm            |
-last week
-
-new changes
 | precipitation       | float32                       | Total precipitation (sum of rainfall and snowfall)    |
-last week
-
-new changes
 | year                | category                      | Year component of the timestamp (for partitioning)    |
 | month               | category                      | Month component of the timestamp (for partitioning)   |
 | day                 | category                      | Day component of the timestamp (for partitioning)     |
