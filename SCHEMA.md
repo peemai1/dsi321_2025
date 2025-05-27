@@ -1,6 +1,7 @@
 Data Schema
 ---
 
+```
 weather/
 ├── main/                  # Main branch
 │   └── weather.parquet/   # Partitioned parquet dataset
@@ -15,4 +16,5 @@ weather/
 │       │   │   └── ...
 │       │   └── ...
 │       └── ...
+```
 
