@@ -135,35 +135,35 @@ CI/CD: GitHub Actions<br>
     [https://github.com/peemai1/dsi321_2025](https://github.com/peemai1/dsi321_2025)
 
 2. **Commit Frequency** 
-| 3f83b82 | Peemai01 | 2025-05-27 | update readme |
-| daad331 | Peemai01 | 2025-05-27 | Update README.md |
-| e9687b8 | Peemai01 | 2025-05-27 | Update README.md |
-| 96fff90 | Peemai01 | 2025-05-27 | Update README.md |
-| 7e9e48c | Peemai01 | 2025-05-27 | Update README.md |
-| 41e7f71 | Peemai01 | 2025-05-27 | Update README.md |
-| c0d80c2 | Peemai01 | 2025-05-27 | Update README.md |
-| 697d288 | Peemai01 | 2025-05-27 | pull data |
-| 9bd21a3 | Peemai01 | 2025-05-27 | Update README.md |
-| 2f0181a | Peemai01 | 2025-05-27 | update README |
-| 85c4c8b | Peemai01 | 2025-05-27 | Update app.py |
-| e5e5b6b | Peemai01 | 2025-05-27 | update |
-| a363567 | Peemai01 | 2025-05-27 | Update SCHEMA.md |
-| f727b65 | Peemai01 | 2025-05-27 | Update SCHEMA.md |
-| 49de4fd | Peemai01 | 2025-05-27 | update schema |
-| c4afb5e | Peemai01 | 2025-05-27 | Create SCHEMA.md |
-| 2ddbb11 | Peemai01 | 2025-05-18 | Update |
-| 9fd1a98 | Peemai01 | 2025-05-18 | rename |
-| 86796dd | Peemai01 | 2025-05-18 | debug , remake app |
-| 852b928 | Peemai01 | 2025-05-17 | fix streamlit |
-| 22ea530 | Peemai01 | 2025-05-17 | fix path |
-| 7cd1d6c | Peemai01 | 2025-05-17 | add streamlit |
-| 33886eb | Peemai01 | 2025-05-17 | Create jupyter pipeline |
-| c17209a | Peemai01 | 2025-05-17 | Create docker-compose.yml |
-| 64f1812 | Peemai01 | 2025-05-17 | Create make/Docker |
-| 9c66917 | Peemai01 | 2025-05-17 | Create Dockerfile |
-| ad7f8c3 | Peemai01 | 2025-05-17 | Create requirements.txt |
-| b5a4011 | Peemai01 | 2025-05-03 | Update LICENSE |
-| fd60c6e | Peemai01 | 2025-05-03 | Initial commit |
+| 3f83b82 | Peemai01 | 2025-05-27 | update readme               |
+| daad331 | Peemai01 | 2025-05-27 | Update README.md            |
+| e9687b8 | Peemai01 | 2025-05-27 | Update README.md            |
+| 96fff90 | Peemai01 | 2025-05-27 | Update README.md            |
+| 7e9e48c | Peemai01 | 2025-05-27 | Update README.md            |
+| 41e7f71 | Peemai01 | 2025-05-27 | Update README.md            |
+| c0d80c2 | Peemai01 | 2025-05-27 | Update README.md            |
+| 697d288 | Peemai01 | 2025-05-27 | pull data                   |
+| 9bd21a3 | Peemai01 | 2025-05-27 | Update README.md            |
+| 2f0181a | Peemai01 | 2025-05-27 | update README               |
+| 85c4c8b | Peemai01 | 2025-05-27 | Update app.py               |
+| e5e5b6b | Peemai01 | 2025-05-27 | update                      |
+| a363567 | Peemai01 | 2025-05-27 | Update SCHEMA.md            |
+| f727b65 | Peemai01 | 2025-05-27 | Update SCHEMA.md            |
+| 49de4fd | Peemai01 | 2025-05-27 | update schema               |
+| c4afb5e | Peemai01 | 2025-05-27 | Create SCHEMA.md            |
+| 2ddbb11 | Peemai01 | 2025-05-18 | Update                      |
+| 9fd1a98 | Peemai01 | 2025-05-18 | rename                      |
+| 86796dd | Peemai01 | 2025-05-18 | debug , remake app          |
+| 852b928 | Peemai01 | 2025-05-17 | fix streamlit               |
+| 22ea530 | Peemai01 | 2025-05-17 | fix path                    |
+| 7cd1d6c | Peemai01 | 2025-05-17 | add streamlit               |
+| 33886eb | Peemai01 | 2025-05-17 | Create jupyter pipeline     |
+| c17209a | Peemai01 | 2025-05-17 | Create docker-compose.yml   |
+| 64f1812 | Peemai01 | 2025-05-17 | Create make/Docker          |
+| 9c66917 | Peemai01 | 2025-05-17 | Create Dockerfile           |
+| ad7f8c3 | Peemai01 | 2025-05-17 | Create requirements.txt     |
+| b5a4011 | Peemai01 | 2025-05-03 | Update LICENSE              |
+| fd60c6e | Peemai01 | 2025-05-03 | Initial commit              |
 (END)
 
 3. **README Quality** 
