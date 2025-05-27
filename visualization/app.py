@@ -675,19 +675,24 @@ def show_clustering(filtered_df: pd.DataFrame):
         2: "เย็นและแห้ง"
     }
 
-    # Display cluster centers for user info
-    st.write("### รายละเอียดแต่ละกลุ่มสภาพอากาศ (Cluster Centers)")
-    center_df = pd.DataFrame(centers, columns=features)
-    center_df['Description'] = [desc_map[i] for i in range(len(centers))]
-    st.dataframe(center_df)
+    # # Display cluster centers for user info
+    # st.write("### รายละเอียดแต่ละกลุ่มสภาพอากาศ (Cluster Centers)")
+    # center_df = pd.DataFrame(centers, columns=features)
+    # center_df['Description'] = [desc_map[i] for i in range(len(centers))]
+    # st.dataframe(center_df)
 
     # Use the latest data point to predict cluster and recommend
     latest_weather = np.array(filtered_df.iloc[-1][features]).reshape(1, -1)
     cluster_id = kmeans.predict(latest_weather)[0]
-
     st.write("### สรุปสภาพอากาศล่าสุดและคำแนะนำ")
     st.write(f"สภาพอากาศล่าสุดจัดอยู่ในกลุ่ม : **{desc_map[cluster_id]}**")
     st.write(f"**คำแนะนำ :** {advice_map[cluster_id]}")
+
+    # Display historical cluster distribution as bar chart
+    st.write("### การกระจายของกลุ่มสภาพอากาศในช่วงเวลาที่เลือก")
+    cluster_counts = filtered_df['cluster'].value_counts().sort_index()
+    cluster_names = [desc_map.get(i, f"Cluster {i}") for i in cluster_counts.index]
+    st.bar_chart(pd.Series(cluster_counts.values, index=cluster_names))
 
 # Main app logic
 if LAKEFS_AVAILABLE:
