@@ -128,3 +128,23 @@ CI/CD: GitHub Actions<br>
     prefect worker start --pool 'default-agent-pool' # Use this if the default work pool doesn’t start properly.
     ```
 - Ensure the LakeFS repository is created before running the system to store data.
+
+## For Grading
+### Part 1
+1. **Repository Setup** [GitHub Repository](https://github.com/peemai1/dsi321_2025)
+
+2. **Commit Frequency** 
+<!-- COMMITS_START -->
+<!-- COMMITS_END -->
+
+3. **README Quality** Total alphabet characters:     4184
+
+4. **Dataset Quality** (#dataset)
+
+### Part 2
+1. **Data Visualization** (## Streamlit Interface)
+2. **Machine Learning Application** (## Streamlit Interface)
+
+
+
+
