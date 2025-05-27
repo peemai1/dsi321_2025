@@ -5,16 +5,16 @@
 This project is a part of <b>DSI321: BIG DATA INFRASTRUCTURE</b> course, building a complete system to gather, process, and show real-time weather data from the OpenWeatherMap API. Every 15 minutes, it automatically pulls weather updates for Satitram and 14 nearby spots, so the information is always fresh. Behind the scenes, it uses Prefect 3 to keep the data workflows running smoothly on schedule, and LakeFS helps keep track of data versions and history. Users can explore the weather details on an interactive dashboard built with Streamlit, available in both English and Thai. To make sure everything runs consistently no matter where it’s deployed, the whole setup is packaged in Docker containers. Finally, the weather data is stored efficiently as partitioned Parquet files with optimized formats for convenience in querying and analysis.
 
 ### Benefits
-- **Real-Time Weather Updates:**
+- **Real-Time Weather Updates:** <br>
     The system checks the weather every 15 minutes, so users always have the latest info. This means users can make quick decisions and stay on top of any sudden changes.
 
-- **Data-Driven Choices:**
+- **Data-Driven Choices:** <br>
     Reliable weather data helps various stakeholders (such as farmers, city planners, and energy professionals) optimize operations, improve resource management, and prepare for weather-related risks
 
-- **Clear, Actionable Insights:**
+- **Clear, Actionable Insights:** <br>
     Instead of overwhelming users with raw data, weather info get organized into easy-to-understand groups. This way, users gets concise summaries and practical takeaways, making the dashboard much more user-friendly.
 
-- **Personalized Preparation Tips:**
+- **Personalized Preparation Tips:** <br>
     By grouping together places with similar weather, the system can give users tailored advice—like what to wear, whether to bring an umbrella, or how to prepare for each conditions.
 
 
@@ -94,24 +94,24 @@ weather/
 ### Streamlit Interface
 ![alt text](<Screenshot 2568-05-27 at 18.33.41.png>)
 **Key Features :**
-- **Weather Overview:** 
+- **Weather Overview:** <br>
     Visualizes key weather metrics over time, including temperature, humidity, wind speed, and precipitation, to give a quick snapshot of current and historical conditions.
 
-- **Temperature:** 
+- **Temperature:** <br>
     Trends: Focuses on temperature patterns using a heatmap visualization. It also provides rule-based insights such as the highest temperature, average temperature during the selected period, and daily temperature range.
 
-- **Raw Data:** 
+- **Raw Data:** <br>
     Allows users to view the raw weather data exactly as collected—matching what's stored and versioned in LakeFS.
 
-- **Smart Weather Analysis:** 
+- **Smart Weather Analysis:** <br>
     Enhances insights by applying K-means clustering to group similar weather conditions and generate basic advice that matches the clustered results.
 
 ### Tools
-Containerize application environment: Docker
-Orchestration: Prefect
-Data Versioning: lakeFS
-Visualization: Streamlit
-CI/CD: GitHub Actions
+Containerize application environment: Docker<br>
+Orchestration: Prefect<br>
+Data Versioning: lakeFS<br>
+Visualization: Streamlit<br>
+CI/CD: GitHub Actions<br>
 
 ### To Run
 - Install required packages:
