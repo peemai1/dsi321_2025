@@ -103,7 +103,7 @@ weather/
 - **Raw Data:** <br>
     Allows users to view the raw weather data exactly as collected—matching what's stored and versioned in LakeFS.
 
-- **Smart Weather Analysis:** <br>
+- **Smart Weather Analysis:** (using unsupervised learning ML)<br>
     Enhances insights by applying K-means clustering to group similar weather conditions and generate basic advice that matches the clustered results.
 
 ## Tools
