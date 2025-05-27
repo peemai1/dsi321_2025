@@ -115,16 +115,16 @@ CI/CD: GitHub Actions
 
 ### To Run
 - Install required packages:
-    '''
+    ```
     pip install -r docker/requirements.txt
-    '''
+    ```
 - Start Docker containers:
-    '''
+    ```
     docker compose up -d --build
-    '''
+    ```
 - For scheduled execution, run in your terminal or Jupyter notebook:
-    '''
+    ```
     python deploy-local.py
     prefect worker start --pool 'default-agent-pool' # Use this if the default work pool doesn’t start properly.
-    '''
+    ```
 - Ensure the LakeFS repository is created before running the system to store data.
