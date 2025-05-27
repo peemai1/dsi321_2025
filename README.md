@@ -135,6 +135,8 @@ CI/CD: GitHub Actions<br>
     [https://github.com/peemai1/dsi321_2025](https://github.com/peemai1/dsi321_2025)
 
 2. **Commit Frequency** 
+| Commit   | Author   | Date       | Message                    |
+|----------|----------|------------|----------------------------|
 | 3f83b82 | Peemai01 | 2025-05-27 | update readme               |
 | daad331 | Peemai01 | 2025-05-27 | Update README.md            |
 | e9687b8 | Peemai01 | 2025-05-27 | Update README.md            |
