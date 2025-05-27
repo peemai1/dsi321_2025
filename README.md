@@ -172,13 +172,13 @@ CI/CD: GitHub Actions<br>
     Total alphabet characters:     4184
 
 4. **Dataset Quality:** 
-    [Dataset](#dataset)
+    look at [(Dataset)](#dataset)
 
 ### Part 2
 1. **Data Visualization:** 
-    look at [Streamlit Interface](#streamlit-interface)
+    look at [(Streamlit Interface)](#streamlit-interface)
 2. **Machine Learning Application:**
-    look at [Streamlit Interface](#streamlit-interface)
+    look at [(Streamlit Interface)](#streamlit-interface)
 
 
 
