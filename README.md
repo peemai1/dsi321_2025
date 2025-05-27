@@ -98,7 +98,7 @@ weather/
     Visualizes key weather metrics over time, including temperature, humidity, wind speed, and precipitation, to give a quick snapshot of current and historical conditions.
 
 - **Temperature:** <br>
-    Trends: Focuses on temperature patterns using a heatmap visualization. It also provides rule-based insights such as the highest temperature, average temperature during the selected period, and daily temperature range.
+    Focuses on temperature patterns using a heatmap visualization. It also provides rule-based insights such as the highest temperature, average temperature during the selected period, and daily temperature range.
 
 - **Raw Data:** <br>
     Allows users to view the raw weather data exactly as collected—matching what's stored and versioned in LakeFS.
